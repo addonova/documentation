@@ -46,6 +46,39 @@ export default {
 
   docsSources: [],
 
+  // Banner images shown at the top of section index pages. Frontmatter
+  // `banner:` in the Markdown wins when present.
+  sectionBanners: {
+    '/docs/': {
+      image: 'addonova-og.png',
+      alt: 'Addonova documentation — next-generation browser extension framework',
+    },
+    '/guide/': {
+      image: 'guide-og.png',
+      alt: 'Addonova Guide — learn the extension framework',
+    },
+    '/api/': {
+      image: 'api-og.png',
+      alt: 'Addonova API — programmatic build and packaging surface',
+    },
+    '/reference/': {
+      image: 'reference-og.png',
+      alt: 'Addonova Reference — CLI, configuration, and error codes',
+    },
+    '/recipes/': {
+      image: 'recipes-og.png',
+      alt: 'Addonova Recipes — copy-paste solutions for real extensions',
+    },
+    '/resources/': {
+      image: 'resources-og.png',
+      alt: 'Addonova Resources — FAQ, glossary, and platform support',
+    },
+    '/blog/': {
+      image: 'blog-og.png',
+      alt: 'Addonova Blog — news and release announcements',
+    },
+  },
+
   // Route-level social preview overrides. The longest matching prefix wins.
   ogRoutes: [
     {

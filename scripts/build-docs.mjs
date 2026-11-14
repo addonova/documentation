@@ -130,6 +130,10 @@ async function resolveDocsSources() {
   return sources
 }
 
+function sectionBannerFor(route) {
+  return (siteConfig.sectionBanners || {})[route] || null
+}
+
 function ogForRoute(route, source) {
   const override = (siteConfig.ogRoutes || [])
     .filter((entry) => entry.prefix && route.startsWith(entry.prefix))
@@ -456,8 +460,14 @@ async function main() {
       const file = source.keyPrefix ? `${source.keyPrefix}/${rel}` : rel
       const sourceFile = path.join(source.root, rel.split('/').join(path.sep))
       const raw = await fs.readFile(sourceFile, 'utf8')
-      const { title, description, date, banner, bannerAlt, bannerWidth, bannerHeight, content } = parseFrontmatter(raw)
+      const parsed = parseFrontmatter(raw)
+      const { title, description, date, content } = parsed
       const route = sourceMap.get(file)
+      const sectionBanner = parsed.banner ? null : sectionBannerFor(route)
+      const banner = parsed.banner || (sectionBanner && sectionBanner.image) || ''
+      const bannerAlt = parsed.bannerAlt || (sectionBanner && sectionBanner.alt) || ''
+      const bannerWidth = parsed.bannerWidth || (sectionBanner ? 1200 : 0)
+      const bannerHeight = parsed.bannerHeight || (sectionBanner ? 630 : 0)
       const og = ogForRoute(route, source)
       const { html, toc, anchors, hasH1 } = render(file, content, routeMap)
       pages.push({
