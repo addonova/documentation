@@ -2065,6 +2065,7 @@ html[data-theme="dark"] .btn-primary {
   color: var(--text);
 }
 .btn-secondary:hover {
+  color: #1a3b26;
   background: var(--bg-muted);
 }
 .btn .arrow {
@@ -2325,8 +2326,8 @@ a[target="_blank"]:not(.gh-link)::after {
   --text: #e6edf3;
   --text-soft: #b7c1cc;
   --text-muted: #8b949e;
-  --accent: #a78bfa;
-  --accent-strong: #c4b5fd;
+  --accent: #cbfe00;
+  --accent-strong: #0efe00;
   --cut: 12px;
 
   position: relative;
