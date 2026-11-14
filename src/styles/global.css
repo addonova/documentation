@@ -1411,6 +1411,26 @@ html[data-theme="dark"] .card-grid .card:hover .card-icon {
   overflow-x: auto;
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0b1020;
+}
+.terminal-body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.terminal-body::-webkit-scrollbar-track {
+  background: #0b1020;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #334155;
+  border: 2px solid #0b1020;
+  border-radius: 999px;
+}
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: #ccff00;
+}
+.terminal-body::-webkit-scrollbar-corner {
+  background: #0b1020;
 }
 .terminal-line {
   display: flex;
