@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@addonova/documentation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Documentation website for Addonova, built with Guchho.",
+  "license": "MIT",
+  "homepage": "https://addonova.github.io/documentation/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/addonova/documentation.git"
+  },
+  "scripts": {
+    "dev": "node scripts/build-docs.mjs --serve",
+    "build": "node scripts/build-docs.mjs",
+    "build:docs": "node scripts/build-docs.mjs --render-only",
+    "validate": "node scripts/build-docs.mjs --validate-only",
+    "clean": "node scripts/clean.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "guchho": "^1.0.9",
+    "highlight.js": "^11.12.0",
+    "markdown-it": "^15.0.2",
+    "markdown-it-anchor": "^10.0.0"
+  }
+}

@@ -1,0 +1,323 @@
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="visually-hidden">Addonova</h1>
+    <img class="hero-logo" src="{{rootPrefix}}public/logo.svg" alt="Addonova" width="96" height="96" />
+    <p class="hero-tagline">Next-generation browser extension framework</p>
+    <p class="hero-lede">
+      Build browser extensions from TypeScript and JavaScript with file-based
+      entrypoints, automatic manifest synthesis, MV2/MV3 conversion, browser
+      launching, auto-reload, and packaging — one build graph for every target.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/guide/getting-started/">Get started</a>
+      <a class="btn btn-secondary" href="/api/">API reference</a>
+    </div>
+
+    <div class="hero-meta">
+      <span class="hero-chip">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
+        file-based entrypoints
+      </span>
+      <span class="hero-chip">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4V4z"/></svg>
+        MV2 &amp; MV3
+      </span>
+      <span class="hero-chip">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.3 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.3-3.6-8.5S9.6 5.9 12 3.5Z"/></svg>
+        Chrome, Edge, Firefox
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <h2 class="section-title">Everything an extension needs</h2>
+  <div class="card-grid">
+    <div class="card">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
+      </span>
+      <h3>File-based entrypoints</h3>
+      <p>
+        Background, content scripts, pages, styles, and assets are discovered
+        from a conventional directory. No manual manifest wiring.
+      </p>
+      <a href="/guide/entrypoints/">Entrypoints</a>
+    </div>
+    <div class="card">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4V4z"/><path d="M9 8h6M9 11h6"/></svg>
+      </span>
+      <h3>Manifest synthesis</h3>
+      <p>
+        A single config produces a complete, validated <code>manifest.json</code>
+        per target, including localized messages and icons.
+      </p>
+      <a href="/guide/manifest-versions/">Manifest versions</a>
+    </div>
+    <div class="card">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+      </span>
+      <h3>Multi-browser targets</h3>
+      <p>
+        Build Chrome, Chromium, Edge, and Firefox from the same source with
+        automatic MV2/MV3 conversion.
+      </p>
+      <a href="/guide/browser-targets/">Browser targets</a>
+    </div>
+    <div class="card">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m8 10 2 2 4-4"/></svg>
+      </span>
+      <h3>Dev launch &amp; reload</h3>
+      <p>
+        Launch a browser with the built extension, watch files, and reload the
+        extension automatically as you edit.
+      </p>
+      <a href="/guide/development-workflow/">Development workflow</a>
+    </div>
+    <div class="card">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a2 2 0 1 1 4 0v1h3a2 2 0 0 1 2 2v3h1a2 2 0 1 1 0 4h-1v3a2 2 0 0 1-2 2h-3v-1a2 2 0 1 0-4 0v1H6a2 2 0 0 1-2-2v-3H3a2 2 0 1 1 0-4h1V7a2 2 0 0 1 2-2h3V4Z"/></svg>
+      </span>
+      <h3>Hooks &amp; modules</h3>
+      <p>
+        Extend the build with hooks, local modules, and reusable plugins that
+        run at well-defined stages.
+      </p>
+      <a href="/guide/hooks-and-modules/">Hooks and modules</a>
+    </div>
+    <div class="card">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5Z"/></svg>
+      </span>
+      <h3>Packaging</h3>
+      <p>
+        Validate and zip a build into a store-ready artifact with deterministic
+        archive names.
+      </p>
+      <a href="/guide/production-builds/">Production builds</a>
+    </div>
+  </div>
+</section>
+
+<section class="tour" data-tour aria-labelledby="tour-heading">
+  <div class="tour-head">
+    <p class="tour-label">A minute with Addonova</p>
+    <h2 id="tour-heading" class="section-title">One tool for the whole extension.</h2>
+    <p class="tour-lede">
+      Scaffold, develop, build, validate, and package with the same CLI<span class="tour-lede-hint"> — click a step, or just watch</span>.
+    </p>
+  </div>
+
+  <div class="tour-grid" data-tour-hover>
+    <ol class="tour-steps" role="tablist" aria-orientation="vertical" aria-label="Addonova workflow steps">
+      <li class="tour-step is-active" role="presentation">
+        <button type="button" class="tour-step-btn" role="tab" id="tour-tab-0" aria-selected="true" aria-expanded="true" aria-controls="tour-terminal" tabindex="0" data-tour-step="0">
+          <span class="tour-step-num" aria-hidden="true">01</span>
+          <span class="tour-step-main">
+            <span class="tour-step-title">
+              Scaffold a project
+              <svg class="tour-chevron" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" aria-hidden="true"><path d="M4 6l4 4 4-4" /></svg>
+            </span>
+            <code class="tour-step-cmd">$ npx addonova init my-extension</code>
+          </span>
+          <span class="tour-progress" aria-hidden="true"></span>
+        </button>
+        <div class="tour-step-desc">
+          <div class="tour-step-desc-inner">
+            Creates a working extension from a bundled template — background, content script, popup, and config.
+            <a class="tour-docs" href="/guide/getting-started/">Docs <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h14" /><path d="M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="tour-step" role="presentation">
+        <button type="button" class="tour-step-btn" role="tab" id="tour-tab-1" aria-selected="false" aria-expanded="false" aria-controls="tour-terminal" tabindex="-1" data-tour-step="1">
+          <span class="tour-step-num" aria-hidden="true">02</span>
+          <span class="tour-step-main">
+            <span class="tour-step-title">
+              Start the dev loop
+              <svg class="tour-chevron" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" aria-hidden="true"><path d="M4 6l4 4 4-4" /></svg>
+            </span>
+            <code class="tour-step-cmd">$ npx addonova dev</code>
+          </span>
+          <span class="tour-progress" aria-hidden="true"></span>
+        </button>
+        <div class="tour-step-desc">
+          <div class="tour-step-desc-inner">
+            Builds, launches a browser with the extension, watches files, and reloads on change.
+            <a class="tour-docs" href="/guide/development-workflow/">Docs <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h14" /><path d="M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="tour-step" role="presentation">
+        <button type="button" class="tour-step-btn" role="tab" id="tour-tab-2" aria-selected="false" aria-expanded="false" aria-controls="tour-terminal" tabindex="-1" data-tour-step="2">
+          <span class="tour-step-num" aria-hidden="true">03</span>
+          <span class="tour-step-main">
+            <span class="tour-step-title">
+              Build every target
+              <svg class="tour-chevron" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" aria-hidden="true"><path d="M4 6l4 4 4-4" /></svg>
+            </span>
+            <code class="tour-step-cmd">$ npx addonova build --browser chrome --browser firefox</code>
+          </span>
+          <span class="tour-progress" aria-hidden="true"></span>
+        </button>
+        <div class="tour-step-desc">
+          <div class="tour-step-desc-inner">
+            Produces one loadable extension directory per browser, each with its own manifest.
+            <a class="tour-docs" href="/guide/production-builds/">Docs <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h14" /><path d="M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="tour-step" role="presentation">
+        <button type="button" class="tour-step-btn" role="tab" id="tour-tab-3" aria-selected="false" aria-expanded="false" aria-controls="tour-terminal" tabindex="-1" data-tour-step="3">
+          <span class="tour-step-num" aria-hidden="true">04</span>
+          <span class="tour-step-main">
+            <span class="tour-step-title">
+              Validate the output
+              <svg class="tour-chevron" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" aria-hidden="true"><path d="M4 6l4 4 4-4" /></svg>
+            </span>
+            <code class="tour-step-cmd">$ npx addonova validate</code>
+          </span>
+          <span class="tour-progress" aria-hidden="true"></span>
+        </button>
+        <div class="tour-step-desc">
+          <div class="tour-step-desc-inner">
+            Checks manifests, locales, and entrypoints against the target's rules before packaging.
+            <a class="tour-docs" href="/reference/cli/validate/">Docs <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h14" /><path d="M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </li>
+
+      <li class="tour-step" role="presentation">
+        <button type="button" class="tour-step-btn" role="tab" id="tour-tab-4" aria-selected="false" aria-expanded="false" aria-controls="tour-terminal" tabindex="-1" data-tour-step="4">
+          <span class="tour-step-num" aria-hidden="true">05</span>
+          <span class="tour-step-main">
+            <span class="tour-step-title">
+              Package for review
+              <svg class="tour-chevron" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square" aria-hidden="true"><path d="M4 6l4 4 4-4" /></svg>
+            </span>
+            <code class="tour-step-cmd">$ npx addonova pack</code>
+          </span>
+          <span class="tour-progress" aria-hidden="true"></span>
+        </button>
+        <div class="tour-step-desc">
+          <div class="tour-step-desc-inner">
+            Zips the validated output into a deterministic archive ready to upload to a store.
+            <a class="tour-docs" href="/reference/cli/pack/">Docs <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12h14" /><path d="M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <div class="tour-panel">
+      <div class="terminal tour-terminal" id="tour-terminal" role="tabpanel" aria-labelledby="tour-tab-0">
+        <div class="terminal-bar">
+          <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="terminal-title">~/my-extension — addonova</span>
+          <span class="tour-counter" data-tour-counter>01 / 05</span>
+          <img class="tour-logo" data-tour-logo src="{{rootPrefix}}public/logo.svg" alt="" aria-hidden="true" width="18" height="18" />
+        </div>
+        <div class="terminal-body tour-body">
+          <div class="terminal-line terminal-cmd">
+            <span class="terminal-prompt" aria-hidden="true">$</span>
+            <span class="terminal-text" data-tour-cmd></span>
+            <span class="terminal-caret" aria-hidden="true"></span>
+          </div>
+          <div class="terminal-output" data-tour-output>
+            <div class="terminal-scenario" data-tour-scenario="0" data-cmd="npx addonova init my-extension">
+              <div class="terminal-files">
+                <div class="terminal-line"><span class="t-create">Create</span><span class="t-path">addonova.config.ts</span></div>
+                <div class="terminal-line"><span class="t-create">Create</span><span class="t-path">package.json</span></div>
+                <div class="terminal-line"><span class="t-create">Create</span><span class="t-path">src/entrypoints/background.ts</span></div>
+                <div class="terminal-line"><span class="t-create">Create</span><span class="t-path">src/entrypoints/content.ts</span></div>
+                <div class="terminal-line"><span class="t-create">Create</span><span class="t-path">src/entrypoints/popup/</span></div>
+              </div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line"><span class="t-success">+ [SUCCESS]</span><span class="terminal-dim">Project initialized successfully.</span></div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line"><span class="terminal-dim">Next steps:</span></div>
+              <div class="terminal-line"><span class="t-path">cd my-extension</span></div>
+              <div class="terminal-line"><span class="t-path">npm install</span></div>
+              <div class="terminal-line"><span class="t-path">npm run dev</span></div>
+            </div>
+            <div class="terminal-scenario" data-tour-scenario="1" data-cmd="npx addonova dev" hidden>
+              <div class="terminal-files">
+                <div class="terminal-line"><span class="t-file">dist/chrome/manifest.json</span><span class="t-size">1.4kb</span></div>
+                <div class="terminal-line"><span class="t-file">dist/chrome/background.js</span><span class="t-size">2.1kb</span></div>
+                <div class="terminal-line"><span class="t-file">dist/chrome/content.js</span><span class="t-size">1.8kb</span></div>
+                <div class="terminal-line"><span class="t-file">dist/chrome/popup/</span><span class="t-size">3 files</span></div>
+              </div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line terminal-summary"><span class="terminal-dim">Built in</span><span class="t-num">38ms</span></div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line terminal-server"><span class="t-arrow" aria-hidden="true">&gt;</span><span class="t-key">Browser</span><span class="t-url">Chrome launched with dist/chrome/</span></div>
+              <div class="terminal-line terminal-server"><span class="t-arrow" aria-hidden="true">&gt;</span><span class="t-key">Watching</span><span class="t-url">src/**</span></div>
+            </div>
+            <div class="terminal-scenario" data-tour-scenario="2" data-cmd="npx addonova build --browser chrome --browser firefox" hidden>
+              <div class="terminal-files">
+                <div class="terminal-line"><span class="t-file">dist/chrome/manifest.json</span><span class="t-size">1.4kb</span></div>
+                <div class="terminal-line"><span class="t-file">dist/firefox/manifest.json</span><span class="t-size">1.5kb</span></div>
+                <div class="terminal-line"><span class="t-file">dist/chrome/background.js</span><span class="t-size">2.1kb</span></div>
+                <div class="terminal-line"><span class="t-file">dist/firefox/background.js</span><span class="t-size">2.1kb</span></div>
+              </div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line terminal-summary"><span class="terminal-dim">Done in</span><span class="t-num">64ms</span></div>
+            </div>
+            <div class="terminal-scenario" data-tour-scenario="3" data-cmd="npx addonova validate" hidden>
+              <div class="terminal-line"><span class="t-success">+ [SUCCESS]</span><span class="terminal-dim">Manifests, locales, and entrypoints are valid.</span></div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line"><span class="terminal-dim">Checked</span><span class="t-path">dist/chrome</span></div>
+              <div class="terminal-line"><span class="terminal-dim">Checked</span><span class="t-path">dist/firefox</span></div>
+            </div>
+            <div class="terminal-scenario" data-tour-scenario="4" data-cmd="npx addonova pack" hidden>
+              <div class="terminal-line"><span class="t-success">+ [SUCCESS]</span><span class="terminal-dim">Created</span><span class="t-path">my-extension-chrome-1.0.0.zip</span></div>
+              <div class="terminal-line"><span class="t-success">+ [SUCCESS]</span><span class="terminal-dim">Created</span><span class="t-path">my-extension-firefox-1.0.0.zip</span></div>
+              <div class="terminal-line terminal-blank">&nbsp;</div>
+              <div class="terminal-line"><span class="terminal-dim">Archives written to</span><span class="t-path">dist/</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-controls">
+        <span class="tour-note">Sample output — hover to pause.</span>
+        <div class="tour-buttons">
+          <button type="button" class="tour-btn" data-tour-prev aria-label="Previous step">&#8249;</button>
+          <button type="button" class="tour-btn tour-btn-wide" data-tour-replay aria-label="Replay step">replay</button>
+          <button type="button" class="tour-btn" data-tour-next aria-label="Next step">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="install-cta">
+  <div class="install-cta-inner">
+    <div class="install-cta-lede">
+      <img src="{{rootPrefix}}public/logo.svg" alt="" width="80" height="80" class="install-logo">
+      <h2 class="install-display">Start building<br>in <span>one command.</span></h2>
+    </div>
+    <div class="install-cta-body">
+      <p class="install-lede">
+        Install Addonova, scaffold an extension, and run the dev loop. Your
+        TypeScript, config, and scripts stay exactly as you write them.
+      </p>
+      <div class="install-widget">
+        <div class="install-cmd">
+          <span class="install-prompt" aria-hidden="true">$</span>
+          <code class="install-cmd-text">npm install --save-dev addonova</code>
+        </div>
+      </div>
+      <div class="install-actions">
+        <a class="btn btn-primary" href="/guide/getting-started/">Getting started</a>
+        <a class="btn btn-secondary" href="/reference/cli/">CLI reference</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://addonova.github.io/documentation/sitemap.xml

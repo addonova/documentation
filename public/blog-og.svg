@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Addonova — next-generation browser extension framework">
+  <rect width="1200" height="630" fill="#0b2417"/>
+  <rect x="0" y="0" width="1200" height="10" fill="#ccff00"/>
+  <g transform="translate(96 150)">
+    <rect width="96" height="96" rx="22" fill="#153c26" stroke="#ccff00" stroke-width="3"/>
+    <path d="M30 69 48 24l18 45" fill="none" stroke="#ccff00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M38.5 54h19" fill="none" stroke="#ccff00" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="216" y="235" fill="#f2ffe5" font-family="ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="-1">Addonova Blog</text>
+  <text x="96" y="380" fill="#ccff00" font-family="ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">News and release announcements</text>
+  <text x="96" y="444" fill="#9fc4ad" font-family="ui-sans-serif, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28">TypeScript and JavaScript · manifest synthesis · MV2/MV3 · packaging</text>
+  <text x="96" y="548" fill="#6f9a7d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24">addonova</text>
+</svg>
