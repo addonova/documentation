@@ -11,7 +11,7 @@
   function currentTheme() {
     const stored = localStorage.getItem('addonova-docs-theme')
     if (stored === 'light' || stored === 'dark') return stored
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    return 'dark'
   }
 
   function applyTheme(theme) {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light" data-base="{{basePath}}">
+<html lang="en" data-theme="dark" data-base="{{basePath}}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +9,7 @@
         try {
           var t = localStorage.getItem('addonova-docs-theme');
           if (t !== 'light' && t !== 'dark') {
-            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            t = 'dark';
           }
           document.documentElement.setAttribute('data-theme', t);
         } catch (e) {}
